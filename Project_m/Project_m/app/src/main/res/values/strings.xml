@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Audio Recorder</string>
+
+    <!-- Login Activity -->
+    <string name="login_title">Аудио Рекордер</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="button_login">🚀 Войти</string>
+    <string name="button_register">⭐ Зарегистрироваться</string>
+    <string name="fill_all_fields">Заполните все поля</string>
+    <string name="login_success">🎉 Вход успешен!</string>
+    <string name="login_error">❌ Неверный email или пароль</string>
+
+    <!-- Register Activity -->
+    <string name="register_title">Регистрация</string>
+    <string name="button_register_confirm">🎯 Зарегистрироваться</string>
+    <string name="button_back">↩️ Назад</string>
+    <string name="password_too_short">🔒 Пароль должен быть не менее 6 символов</string>
+    <string name="register_success">✅ Регистрация успешна!</string>
+
+    <!-- Audio Recorder Activity -->
+    <string name="audio_recorder_title">Аудио Рекордер</string>
+    <string name="press_to_record">👇 Нажми для записи</string>
+    <string name="recording">🔴 Идет запись…</string>
+    <string name="button_record">🎤 Запись</string>  <!-- Добавил текст -->
+    <string name="button_stop">⏹️ Стоп</string>       <!-- Изменил название -->
+    <string name="button_play">▶️ Воспроизвести</string>
+    <string name="button_stop_play">⏹️ Остановить</string>
+    <string name="button_logout">🚪 Выйти</string>
+    <string name="recording_started">🎙️ Запись началась!</string>
+    <string name="recording_stopped">💾 Запись сохранена!</string>
+    <string name="playback_completed">🎵 Воспроизведение завершено</string>
+    <string name="playback_error">❌ Ошибка воспроизведения</string>
+    <string name="recording_error">❌ Ошибка записи</string>
+    <string name="need_audio_permission">🎤 Нужно разрешение на запись аудио</string>
+    <string name="no_audio_file">❌ Нет записанного аудио</string>
+
+    <!-- Общие -->
+    <string name="checkmark">✔</string>
+    <string name="time_default">00:00</string>
+    <string name="stop">■</string>
+    <string name="record">Запись</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="create_account">Создать аккаунт</string>
+
+</resources>
