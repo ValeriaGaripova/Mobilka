@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project_m">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_m"
+        tools:targetApi="31">
 
-        <!-- Сделать LoginActivity главным экраном -->
-        <activity android:name=".LoginActivity"
+        <!-- СТАРТОВЫЙ ЭКРАН - АВТОРИЗАЦИЯ -->
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +25,17 @@
             </intent-filter>
         </activity>
 
+        <!-- ОСНОВНЫЕ ЭКРАНЫ -->
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".AudioRecorderActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".TunerActivity" />
+        <activity android:name=".CalibrationActivity" />
+        <activity android:name=".ExercisesActivity" />
+        <activity android:name=".ProgressActivity" />
         <activity android:name=".HistoryActivity" />
+
+        <!-- ЭКРАН ВОССТАНОВЛЕНИЯ ПАРОЛЯ -->
+        <activity android:name=".ResetPasswordActivity" />
 
     </application>
 </manifest>

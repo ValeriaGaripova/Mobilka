@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- App Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- User Profile Card with Edit -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="25dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+
+            <!-- User name -->
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Edit button (below the name) -->
+            <TextView
+                android:id="@+id/btnEditName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✏️ Изменить имя"
+                android:textSize="14sp"
+                android:textColor="#4FC3F7"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <!-- Welcome message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎵 Добро пожаловать в мир музыки!"
+                android:textSize="16sp"
+                android:textColor="@color/accent_teal"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <!-- Stats -->
+            <TextView
+                android:id="@+id/tvUserStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎤 Твои музыкальные приключения начинаются!"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Quick Actions -->
+        <Button
+            android:id="@+id/btnTuner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/tuner_button"
+            android:textSize="20sp"
+            android:background="@drawable/button_gradient"
+            android:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="10dp" />
+
+        <!-- Calibration Button -->
+        <Button
+            android:id="@+id/btnCalibrate"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/calibrate_button"
+            android:textSize="20sp"
+            android:background="@drawable/button_gradient"
+            android:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:id="@+id/btnExercises"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/exercises_button"
+            android:textSize="20sp"
+            android:background="@drawable/button_gradient"
+            android:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:id="@+id/btnProgress"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_gradient"
+            android:backgroundTint="@null"
+            android:drawablePadding="10dp"
+            android:text="@string/progress_button"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text="@string/logout_button"
+            android:textSize="16sp"
+            android:background="@drawable/card_background"
+            android:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

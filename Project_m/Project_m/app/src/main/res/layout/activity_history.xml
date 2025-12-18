@@ -3,38 +3,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient_background"
     android:padding="16dp">
 
+    <!-- Заголовок -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="История записей"
+        android:text="📖 История записей"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:gravity="center"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="16dp" />
 
+    <!-- Сообщение когда история пуста -->
     <TextView
-        android:id="@+id/empty_history_text"
+        android:id="@+id/tvEmptyHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Записей пока нет"
+        android:text="История записей пуста"
+        android:textSize="18sp"
+        android:textColor="@color/text_secondary"
         android:gravity="center"
-        android:textSize="16sp"
-        android:padding="20dp" />
+        android:padding="32dp"
+        android:visibility="gone" />
 
-    <ListView
-        android:id="@+id/history_list_view"
+    <!-- Список записей -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHistory"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Кнопка назад -->
     <Button
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Назад"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="⬅️ Назад"
+        android:textSize="16sp"
+        android:background="@drawable/card_background"
+        android:textColor="@color/white" />
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Основные цвета -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -8,13 +9,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Новая цветовая схема - фиолетово-синяя -->
-    <color name="gradient_start">#667EEA</color>
-    <color name="gradient_end">#764BA2</color>
-    <color name="accent_purple">#A78BFA</color>
-    <color name="accent_blue">#60A5FA</color>
-    <color name="accent_green">#34D399</color>
-    <color name="accent_pink">#F472B6</color>
-    <color name="button_gradient_start">#8B5CF6</color>
-    <color name="button_gradient_end">#06B6D4</color>
+
+    <!-- Новая цветовая палитра -->
+    <color name="gradient_start">#FF6B6B</color>
+    <color name="gradient_end">#4ECDC4</color>
+    <color name="accent_pink">#FF6B9B</color>
+    <color name="accent_teal">#4ECDC4</color>
+    <color name="accent_purple">#9B59B6</color>
+    <color name="dark_background">#1A1A2E</color>
+    <color name="card_background">#2D3047</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B8B8B8</color>
+    <color name="success_green">#2ECC71</color>
+    <color name="warning_orange">#F39C12</color>
+    <color name="error_red">#E74C3C</color>
+
 </resources>

@@ -1,9 +1,23 @@
+<!-- res/values/themes.xml -->
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Project_m" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.Project_m" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gradient_start</item>
+        <item name="colorPrimaryVariant">@color/gradient_end</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Измените стиль кнопок по умолчанию -->
+        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
+
+        <!-- Отключите backgroundTint для всех кнопок -->
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
     </style>
 
-    <style name="Theme.Project_m" parent="Base.Theme.Project_m" />
+    <!-- Кастомный стиль кнопок -->
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_gradient</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@null</item>
+    </style>
 </resources>

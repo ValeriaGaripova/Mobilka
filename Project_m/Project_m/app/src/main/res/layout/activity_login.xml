@@ -1,121 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient_background"
+    android:padding="24dp"
+    android:gravity="center">
 
-    <!-- Анимированный заголовок со смайликом -->
-    <LinearLayout
+    <!-- Заголовок -->
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:text="🎵 Vocal Coach"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:gravity="center"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="50dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🎵"
-            android:textSize="42sp"
-            android:layout_marginEnd="8dp" />
+    <!-- Слоган -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_slogan"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AudioRec"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:shadowColor="#80000000"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="4" />
-    </LinearLayout>
-
-    <!-- Карточка с формой -->
+    <!-- Карточка формы -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/gradient_purple"
-        android:padding="32dp"
-        android:elevation="8dp"
-        android:alpha="0.95">
+        android:background="@drawable/card_background"
+        android:padding="30dp"
+        android:layout_marginBottom="20dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Поле Email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="yes"
+            android:autofillHints="email"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Поле Пароль -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:importantForAutofill="yes"
+            android:autofillHints="password"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Кнопка "Забыли пароль?" (с увеличенной областью касания) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:layout_marginBottom="20dp"
-            android:hint="Email"
-            app:hintTextColor="@color/white"
-            app:boxStrokeColor="@color/white">
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="12dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:minHeight="60dp"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:inputType="textEmailAddress" />
+            <TextView
+                android:id="@+id/textViewForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textSize="14sp"
+                android:textColor="#4FC3F7"
+                android:gravity="center" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:hint="Пароль"
-            app:hintTextColor="@color/white"
-            app:boxStrokeColor="@color/white">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:minHeight="60dp"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:inputType="textPassword" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
+        <!-- Кнопка Входа -->
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@drawable/button_gradient"
-            android:text="Войти"
+            android:text="@string/login_button"
             android:textSize="18sp"
-            android:textStyle="bold"
+            android:background="@drawable/button_gradient"
             android:textColor="@color/white"
-            android:elevation="4dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="20dp" />
 
+        <!-- Кнопка Регистрации -->
         <Button
             android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:background="@color/white"
-            android:text="Создать аккаунт"
+            android:text="@string/register_prompt"
             android:textSize="16sp"
-            android:textColor="@color/accent_purple"
-            android:elevation="2dp" />
+            android:background="@android:color/transparent"
+            android:textColor="@color/accent_teal"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-    <!-- Декоративные элементы -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="✨ Записывай звук легко и быстро ✨"
-        android:textSize="14sp"
-        android:textColor="@color/white"
-        android:layout_marginTop="30dp"
-        android:alpha="0.9" />
 
 </LinearLayout>

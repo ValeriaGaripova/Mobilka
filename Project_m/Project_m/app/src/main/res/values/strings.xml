@@ -1,47 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Audio Recorder</string>
+    <string name="app_name">🎶 Pitch Perfect</string>
 
-    <!-- Login Activity -->
-    <string name="login_title">Аудио Рекордер</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Пароль</string>
-    <string name="button_login">🚀 Войти</string>
-    <string name="button_register">⭐ Зарегистрироваться</string>
-    <string name="fill_all_fields">Заполните все поля</string>
-    <string name="login_success">🎉 Вход успешен!</string>
-    <string name="login_error">❌ Неверный email или пароль</string>
+    <!-- Dashboard -->
+    <string name="dashboard_title">Главная</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="level">Уровень %d</string>
+    <string name="experience">Опыт: %d/%d</string>
+    <string name="tuner_button">🎵 Тюнер</string>
+    <string name="exercises_button">💪 Упражнения</string>
+    <string name="progress_button">📊 Прогресс</string>
+    <string name="achievements_button">🏆 Достижения</string>
+    <string name="calibrate_button">🎻 Калибровать слух</string>
+    <string name="logout_button">🚪 Выйти</string>
 
-    <!-- Register Activity -->
+    <!-- Login -->
+    <string name="login_title">AudioRec</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="register_prompt">Создать аккаунт</string>
+    <string name="login_slogan">🎵 Записывай звук легко и быстро 🎵</string>
+
+    <!-- Register -->
     <string name="register_title">Регистрация</string>
-    <string name="button_register_confirm">🎯 Зарегистрироваться</string>
-    <string name="button_back">↩️ Назад</string>
-    <string name="password_too_short">🔒 Пароль должен быть не менее 6 символов</string>
-    <string name="register_success">✅ Регистрация успешна!</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="back_button">Назад</string>
+    <string name="register_slogan">🎵 Создай свой аудио-профиль 🎵</string>
+    <string name="confirm_password_hint">Подтвердите пароль</string>
 
-    <!-- Audio Recorder Activity -->
-    <string name="audio_recorder_title">Аудио Рекордер</string>
-    <string name="press_to_record">👇 Нажми для записи</string>
-    <string name="recording">🔴 Идет запись…</string>
-    <string name="button_record">🎤 Запись</string>  <!-- Добавил текст -->
-    <string name="button_stop">⏹️ Стоп</string>       <!-- Изменил название -->
-    <string name="button_play">▶️ Воспроизвести</string>
-    <string name="button_stop_play">⏹️ Остановить</string>
-    <string name="button_logout">🚪 Выйти</string>
-    <string name="recording_started">🎙️ Запись началась!</string>
-    <string name="recording_stopped">💾 Запись сохранена!</string>
-    <string name="playback_completed">🎵 Воспроизведение завершено</string>
-    <string name="playback_error">❌ Ошибка воспроизведения</string>
-    <string name="recording_error">❌ Ошибка записи</string>
-    <string name="need_audio_permission">🎤 Нужно разрешение на запись аудио</string>
-    <string name="no_audio_file">❌ Нет записанного аудио</string>
+    <!-- History -->
+    <string name="history_title">История записей</string>
+    <string name="empty_history">Записей пока нет</string>
+    <string name="back">Назад</string>
 
-    <!-- Общие -->
-    <string name="checkmark">✔</string>
-    <string name="time_default">00:00</string>
-    <string name="stop">■</string>
-    <string name="record">Запись</string>
-    <string name="welcome">Добро пожаловать!</string>
-    <string name="create_account">Создать аккаунт</string>
+    <!-- Exercises -->
+    <string name="exercises_title">💪 Упражнения</string>
+
+    <!-- Progress -->
+    <string name="progress_title">📊 Прогресс</string>
+
+    <!-- Achievements -->
+    <string name="achievements_title">🏆 Достижения</string>
+
+    <!-- Common -->
+    <string name="fill_all_fields">Заполните все поля</string>
+    <string name="password_length_error">Пароль должен быть не менее 6 символов</string>
+    <string name="register_first">Сначала зарегистрируйтесь</string>
+    <string name="register_link">Зарегистрироваться</string>
+
+    <!-- Audio Recorder/Tuner -->
+    <string name="record_button">🎤 Запись</string>
+    <string name="stop_button">⏹️ Остановить</string>
+    <string name="play_button">▶️ Прослушать</string>
+    <string name="record_status_ready">Нажмите для записи</string>
+    <string name="record_status_recording">🎤 Запись идет…</string>
+    <string name="recording_started">Запись начата</string>
+    <string name="recording_stopped">Запись остановлена</string>
+    <string name="recording_error">Ошибка записи</string>
+    <string name="recording_saved">Запись сохранена</string>
+    <string name="permission_denied">Разрешение на запись аудио отклонено</string>
+    <string name="permission_granted">Разрешение получено</string>
+    <string name="timer_default">00:00</string>
+    <string name="no_recording">Сначала сделайте запись</string>
+    <string name="playback_started">Воспроизведение записи</string>
+    <string name="playback_completed">Воспроизведение завершено</string>
+    <string name="playback_error">Ошибка воспроизведения</string>
+
+    <!-- Placeholder strings for note display -->
+    <string name="note_display">🎵 Нота: %s</string>
+    <string name="accuracy_display">🎯 Точность: %s%%</string>
+    <string name="frequency_display">📊 Частота: %s Гц</string>
+
+    <string name="recording_status">🎤 Идет запись…</string>
+    <string name="playing_status">▶️ Воспроизведение…</string>
+    <string name="ready_to_record">Нажмите для записи</string>
+
+    <!-- НОВЫЕ СТРОКИ ДЛЯ УПРАЖНЕНИЙ -->
+    <string name="select_exercise">🎯 Выберите упражнение:</string>
+    <string name="start_exercise">🎵 Начать</string>
+    <string name="exercise_completed">✅ Выполнено</string>
+    <string name="minutes">%d мин</string>
+    <string name="progress_percent">%d%%</string>
+    <string name="choose_exercise_first">🎵 Сначала выберите упражнение</string>
+    <string name="exercise_paused">⏸️ Упражнение приостановлено</string>
+    <string name="exercise_completed_toast">✅ Упражнение завершено!</string>
+
+    <!-- Строки для item_exercise.xml -->
+    <string name="exercise_title">Название упражнения</string>
+    <string name="category">Категория</string>
+    <string name="duration">Длительность</string>
+    <string name="progress">Прогресс</string>
+
+    <!-- НОВЫЕ СТРОКИ ДЛЯ TUNER ACTIVITY -->
+    <string name="select_exercise_first">Сначала выберите упражнение</string>
+    <string name="timer_finished">00:00</string>
+    <string name="stop_exercise">⏹️ Стоп</string>
+    <string name="default_timer">05:00</string>
+    <string name="starting_exercise_format">Начинаем: %s</string>
+    <string name="exercise_details_format">%s\nДлительность: %d мин\nПрогресс: %d%%</string>
+
+    <!-- Строки для Test Microphone Activity -->
+    <string name="test_microphone_title">Тест микрофона</string>
+    <string name="test_microphone_button">Проверить микрофон</string>
+    <string name="microphone_status_ready">Готов к проверке микрофона</string>
+    <string name="microphone_test_success">✅ Микрофон работает!\nНастройки: %1$s, %2$s, %3$s</string>
+    <string name="microphone_working">Микрофон исправен</string>
+    <string name="microphone_not_working">❌ Микрофон не работает</string>
+    <string name="microphone_check_failed">Не удалось проверить микрофон</string>
+    <string name="microphone_error_buffer">Ошибка буфера аудио</string>
+    <string name="microphone_not_initialized">Микрофон не инициализирован</string>
+    <string name="microphone_no_permission">Нет разрешения на микрофон</string>
+    <string name="microphone_security_error">Ошибка безопасности: %s</string>
+    <string name="microphone_test_error">Ошибка теста: %s</string>
+    <string name="microphone_unexpected_error">Неожиданная ошибка</string>
+    <string name="microphone_permission_required">Требуется разрешение на микрофон</string>
+
+    <!-- Дополнительные общие строки -->
+    <string name="error">Ошибка</string>
+    <string name="success">Успех</string>
+    <string name="loading">Загрузка…</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">OK</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="settings">Настройки</string>
+    <string name="profile">Профиль</string>
+    <string name="help">Помощь</string>
+    <string name="about">О приложении</string>
+
+    <!-- Сообщения для пользователя -->
+    <string name="microphone_unavailable">Микрофон недоступен или занят другим приложением</string>
+    <string name="recording_too_short">Запись слишком короткая</string>
+    <string name="file_not_found">Файл записи не найден или пустой</string>
+    <string name="database_error">Ошибка базы данных</string>
+    <string name="data_saved">✅ Данные сохранены в историю</string>
+    <string name="save_failed">⚠️ Не удалось сохранить в историю</string>
+
+    <!-- Навигация -->
+    <string name="nav_tuner">Тюнер</string>
+    <string name="nav_exercises">Упражнения</string>
+    <string name="nav_progress">Прогресс</string>
+    <string name="nav_achievements">Достижения</string>
+    <string name="nav_history">История</string>
+
+    <!-- Прогресс -->
+    <string name="days_streak">%d дней</string>
+    <string name="percentage_format">%d%%</string>
+    <string name="seconds_format">%d сек</string>
+    <string name="minutes_format">%d мин</string>
+    <string name="hours_minutes_format">%dч %02dмин</string>
+
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="reset_password_title">Восстановление пароля</string>
+    <string name="reset_password_hint">Ваш email</string>
+    <string name="reset_password_button">Отправить ссылку</string>
+    <string name="reset_password_success">Ссылка для сброса пароля отправлена</string>
+    <string name="back_to_login">← Назад к входу</string>
 
 </resources>
