@@ -42,10 +42,6 @@
 
 1. **Клонируйте репозиторий**
 
-git clone https://github.com/yourusername/vocal-coach.git
-cd vocal-coach
-
-
 2. **Откройте проект в Android Studio**
    - Выберите File → Open → папка проекта
    - Дождитесь завершения индексации и синхронизации Gradle
