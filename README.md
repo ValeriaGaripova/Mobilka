@@ -60,7 +60,7 @@ cd vocal-coach
    - Или используйте Android Studio для установки напрямую
 
 ### Загрузка готового APK
-[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/yourusername/vocal-coach/releases/latest)
+[[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/yourusername/vocal-coach/releases/latest)](https://github.com/ValeriaGaripova/Mobilka/blob/main/app-debug.apk)
 
 ## 🏗️ Структура проекта
 
