@@ -58,6 +58,9 @@ cd vocal-coach
 4. **Установите APK на устройство**
    - Скопируйте `app/build/outputs/apk/debug/app-debug.apk` на устройство
    - Или используйте Android Studio для установки напрямую
+     
+5. Интрукция пользователя
+https://github.com/ValeriaGaripova/Mobilka/blob/main/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F.docx
 
 ### Загрузка готового APK
 [[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/yourusername/vocal-coach/releases/latest)](https://github.com/ValeriaGaripova/Mobilka/blob/main/app-debug.apk)
